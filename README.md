@@ -32,3 +32,31 @@ El código está diseñado bajo una arquitectura minimalista para facilitar su c
    ```bash
    git clone https://github.com/AndresPontaza/Conferencia_Backend_ECYS.git
    cd Conferencia_Backend_ECYS
+   cd AgendaBackend
+   dotnet restore
+   dotnet run
+   ```
+
+## 🛠️ Guía de Instalación y Configuración Paso a Paso
+
+Sigue estos pasos en tu terminal (CMD, PowerShell o Terminal de VS Code) para replicar el proyecto desde cero:
+
+### 1. Crear el espacio de trabajo
+Primero, creamos la carpeta donde vivirá nuestro código:
+```bash
+# Crear carpeta principal
+mkdir ConferenciaBackend
+cd ConferenciaBackend
+
+# Crear el proyecto de consola
+dotnet new console -n AgendaBackend
+
+# Entrar a la carpeta del proyecto
+cd AgendaBackend
+
+# Agregar el paquete de ADO.NET para SQLite
+dotnet add package Microsoft.Data.Sqlite
+
+# Verificar que el paquete se ha instalado correctamente (si ves un "Hello World!" en la salida, es que todo está listo)
+dotnet run
+```
