@@ -30,5 +30,5 @@ El código está diseñado bajo una arquitectura minimalista para facilitar su c
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/Conferencia_Backend_ECYS.git](https://github.com/tu-usuario/Conferencia_Backend_ECYS.git)
+   git clone https://github.com/AndresPontaza/Conferencia_Backend_ECYS.git
    cd Conferencia_Backend_ECYS
