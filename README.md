@@ -43,7 +43,7 @@ El código está diseñado bajo una arquitectura minimalista para facilitar su c
 Sigue estos pasos en tu terminal (CMD, PowerShell o Terminal de VS Code) para replicar el proyecto desde cero:
 
 ### 1. Crear el espacio de trabajo
-Primero, creamos la carpeta donde vivirá nuestro código:
+Primero, creamos la carpeta donde estará nuestro código:
 ```bash
 # Crear carpeta principal
 mkdir ConferenciaBackend
