@@ -22,7 +22,8 @@ El código está diseñado bajo una arquitectura minimalista para facilitar su c
 
 * **Program.cs:** Contiene la lógica principal del Backend y el manejo de la conexión.
 * **AgendaBackend.csproj:** Configuración del proyecto y dependencias de NuGet.
-* **agenda_geek.db:** El archivo de base de datos que se genera automáticamente al ejecutar el programa.
+* **agenda_api.db:** El archivo de base de datos que se genera automáticamente al ejecutar el programa.
+* **Conferencia_Backend_ECYS.sln:** Solución de Visual Studio que agrupa el proyecto.
 
 ---
 
@@ -49,7 +50,7 @@ mkdir ConferenciaBackend
 cd ConferenciaBackend
 
 # Crear el proyecto de consola
-dotnet new console -n AgendaBackend
+dotnet new web -n AgendaBackend
 
 # Entrar a la carpeta del proyecto
 cd AgendaBackend
@@ -57,6 +58,12 @@ cd AgendaBackend
 # Agregar el paquete de ADO.NET para SQLite
 dotnet add package Microsoft.Data.Sqlite
 
+# Agregar el paquete para OpenAPI
+dotnet add package Microsoft.AspNetCore.OpenApi
+
 # Verificar que el paquete se ha instalado correctamente (si ves un "Hello World!" en la salida, es que todo está listo)
 dotnet run
+
+# Crear el archivo .gitignore para evitar subir archivos innecesarios a GitHub
+dotnet new gitignore
 ```
