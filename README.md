@@ -67,3 +67,20 @@ dotnet run
 # Crear el archivo .gitignore para evitar subir archivos innecesarios a GitHub
 dotnet new gitignore
 ```
+
+## Endpoints disponibles (Recuerda que el puerto puede variar, verifica la salida de tu terminal para confirmar el puerto correcto):
+
+| Método HTTP | Ruta                                 | Descripción                          |
+|-------------|--------------------------------------|--------------------------------------|
+| GET         | http://localhost:5276/contactos      | Obtener todos los contactos          |
+| POST        | http://localhost:5276/contactos      | Agregar un nuevo contacto            |    
+| DELETE      | http://localhost:5276/contactos/{id} | Eliminar un contacto por ID          |
+| PUT         | http://localhost:5276/contactos/{id} | Actualizar un contacto por ID        |
+
+### JSON de ejemplo para POST y PUT:
+```json
+{
+    "nombre": "Jhonny",
+    "telefono": "5555-1234"
+}
+```
